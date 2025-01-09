@@ -18,7 +18,7 @@ El archivo examen.py tiene 4 bloques principales, los cuales son:
 La lógica de esta función es que teniendo como argumento un dataframe, una columna y un umbral de valor, regresa otro dataframe, pero transformado y filtrado. Cabe resaltar que tiene manejo de error para en caso de haber ingresado un nombre incorrecto o tipo de valor incorrecto lanzar un logging de error, tal como se muestra en la imagen.
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_1](../imgs/01.png) | ![Función_1](../imgs/02.png)
+![Función_1](./imgs/01.png) | ![Función_1](./imgs/02.png)
 
 
 #### Problema 2- Generar datos para regresión
@@ -26,7 +26,7 @@ Para este problem, se utilizó faker para generar datos aleatorios entre 0 y 1.L
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_2](../imgs/03.png) | ![Función_2](../imgs/04.png)
+![Función_2](./imgs/03.png) | ![Función_2](./imgs/04.png)
 
 #### Problema 3- Entrenar modelo de regresión múltiple
 Aquí, se parte del problema 2, donde se obtuvieron los datos "X" y "y" para aquí entrenar un modelo de regresión lineal. Si bien no venía específicado, me tome la libertad de hacer un split entre train y test para hacer notar el concepto ya que es muy importante a la hora de entrenar modelo, no entrenar sobre todo, sino sobre una parte y así evitar el overfitting. De igual manera, se tiene manejo de errores en caso de pasar a las funciones argumentos no adecuados. Y para finalizar y comprobar el entrenamiento, se utiliza el método predict sobre el conjunto X completo, vemos que nos regresa una respuesta indicando que se entrenó el modelo. Los detalles de si es el mejor modelo se omiten por ahora.
@@ -34,7 +34,7 @@ Aquí, se parte del problema 2, donde se obtuvieron los datos "X" y "y" para aqu
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_3](../imgs/05.png) | ![Función_3](../imgs/06.png)
+![Función_3](./imgs/05.png) | ![Función_3](./imgs/06.png)
 
 
 #### Problema 4- Lista comprehensión anidado
@@ -42,7 +42,7 @@ Para este problema sólo se tuvo que desanidar un conjunto de listas dentro de o
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_4](../imgs/07.png) | ![Función_4](../imgs/08.png)
+![Función_4](./imgs/07.png) | ![Función_4](./imgs/08.png)
 
 
 #### Problema 5- Agrupar y agregar con pandas
@@ -50,14 +50,14 @@ Para esta función se tuvo que hacer uso de pandas y la función groupby para ag
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_5](../imgs/09.png) | ![Función_5](../imgs/10.png)
+![Función_5](./imgs/09.png) | ![Función_5](./imgs/10.png)
 
 #### Problema 6- Modelo de clasificación logística
 Para el modelo de clasificación logística nos menciona que debemos pasarle como argumento a la función X y Y. Pero como también dicen que con un conjunto de datos de tipo binario. Asi que aprovechando el faker ya importado, se hizo uso de él para generar estos datos dummy. Como es un problema de clasificación, ahora nuestra predicción será un 0 o 1. También tiene manejo de errores. De igual manera, los detalles de cómo hacer el mejor modelo no se tocan aquí, tan sólo me limite a hacer un split entre train y test y así entrenar el modelo de manera adecuada.
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_6](../imgs/11.png) | ![Función_6](../imgs/12.png)
+![Función_6](./imgs/11.png) | ![Función_6](./imgs/12.png)
 
 
 #### Problema 7- Aplicar función a una columna con pandas
@@ -65,7 +65,7 @@ Para resolver esta consigna, utilice la función que ya viene por defecto con pa
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_7](../imgs/15.png) | ![Función_7](../imgs/14.png)
+![Función_7](./imgs/15.png) | ![Función_7](./imgs/14.png)
 
 
 #### Problema 8- Comprehensions con condiciones
@@ -73,9 +73,9 @@ Para esta tarea solamente se hizo uso de las comprehensiones de listas para elev
 
 Declaración Función        |  Llamada con manejo de errores
 :-------------------------:|:-------------------------:
-![Función_8](../imgs/13.png) | ![Función_8](../imgs/16.png)
+![Función_8](./imgs/13.png) | ![Función_8](./imgs/16.png)
 
 
 #### Ejecución final
 Por último, encontramos que al ejecutar el programa .py, tendremos los logs correspondientes que nos permitiran atacar algún caso de error , o en caso contrario, verificar que todas las funciones son correctas, con los argumentos solicitados y resultados esperados.
-![Imagen de logs](../imgs/17.png)
+![Imagen de logs](./imgs/17.png)
